@@ -17,4 +17,4 @@ $randomFileIndex = Get-Random -Maximum $files.Count
 $filePath = $files[$randomFileIndex].FullName
 Write-Output "$randomFileIndex : $filePath"
 
-Invoke-Expression "explorer /select,$filePath"
+# Invoke-Expression "explorer /select,$filePath"
