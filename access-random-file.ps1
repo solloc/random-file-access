@@ -16,7 +16,9 @@ $files = Get-ChildItem -Path $Path -Recurse -File
 $randomFileIndex = Get-Random -Maximum $files.Count
 $filePath = $files[$randomFileIndex].FullName
 
-$filePath = """$($filePath)"""
+# $filePath = "D:\Workspaces\random-file-access\data\1=2.jpg"
+
+$filePath = """""""$($filePath)"""""""
 
 Write-Output "$randomFileIndex : $filePath"
 
